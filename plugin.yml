@@ -1,0 +1,22 @@
+name: CrucialCommands
+version: 1.0
+description: 
+authors: [Zach443]
+ 
+main: me.zach.CrucialCommands.CrucialCommands
+database: false
+ 
+commands:
+    fly:
+        description: Enabled flymode
+    heal:
+        description: Heals and Feeds the player
+    ping:
+        description: Pong
+    gamemode:
+        description: Changes the users gamemode
+        aliases: gm
+    #vanish: 
+        #description: Vanishes the user
+    workbench:
+        description: Open a workbench on use.
