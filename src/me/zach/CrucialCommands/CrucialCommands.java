@@ -11,6 +11,7 @@ public class CrucialCommands extends JavaPlugin{
 	@Override
 	public void onEnable() {
 		
+		//Not in use, as of v1.0. Saving for next version
 		//Updater updater = new Updater(this, 71194, this.getFile(), Updater.UpdateType.DEFAULT, false);
 		
 		getLogger().info("I am Zach443, and I approve this plugin!");
