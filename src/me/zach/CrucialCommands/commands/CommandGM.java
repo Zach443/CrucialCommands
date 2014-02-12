@@ -14,11 +14,11 @@ public class CommandGM implements CommandExecutor{
 		if(sender instanceof Player) {
 			Player player = (Player) sender;
 			if((cmd.getName().equalsIgnoreCase("gamemode")) || (cmd.getName().equalsIgnoreCase("gm"))) {
-				if(player.hasPermission("perm.gm")) {
+				if(player.hasPermission("crucial.gm")) {
 					if(args.length == 1) {
-						if(args[0].equalsIgnoreCase("c") || (args[0].equalsIgnoreCase("1"))) {
+						if(args[0].equalsIgnoreCase("c") || (args[0].equalsIgnoreCase("1") || (args[0].equalsIgnoreCase("creative")))) {
 							player.setGameMode(GameMode.CREATIVE);
-						} else if(args[0].equalsIgnoreCase("s") || (args[0].equalsIgnoreCase("0"))) {
+						} else if(args[0].equalsIgnoreCase("s") || (args[0].equalsIgnoreCase("0") || (args[0].equalsIgnoreCase("survival")))) {
 							player.setGameMode(GameMode.SURVIVAL);
 						} else {
 							player.sendMessage(CrucialCommands.incorrectUsage + "Correct usage: /gm [gamemode]");

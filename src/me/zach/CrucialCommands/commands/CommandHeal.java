@@ -10,7 +10,7 @@ public class CommandHeal implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if(cmd.getName().equalsIgnoreCase("heal")) {
 			Player player = (Player) sender;
-			if(player.hasPermission("perm.heal")) {
+			if(player.hasPermission("crucial.heal")) {
 				player.setHealth(20.0);
 				player.setFoodLevel(20);
 				player.setSaturation(10);

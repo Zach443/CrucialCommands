@@ -11,7 +11,7 @@ public class CommandWorkBench implements CommandExecutor {
 		if(sender instanceof Player){
 		Player player = (Player) sender;
 			if(cmd.getName().equalsIgnoreCase("workbench") || (cmd.getName().equalsIgnoreCase("wb"))) {
-				if(player.hasPermission("perm.workbech")) {
+				if(player.hasPermission("crucial.workbech")) {
 					player.openWorkbench(null, true);
 				} else {
 					player.sendMessage(CrucialCommands.noPermission + "You can't do that. What a shame :("); 
